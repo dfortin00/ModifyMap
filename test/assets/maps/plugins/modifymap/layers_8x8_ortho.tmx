@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="8" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="1">
+ <editorsettings>
+  <export target="layers_8x8_ortho.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="custom_map_property" value="test map string"/>
+ </properties>
+ <layer id="1" name="tile_layer" width="8" height="8" parallaxx="1.5" parallaxy="2.5">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="object_layer" visible="0"/>
+ <imagelayer id="4" name="image_layer" offsetx="30" offsety="40"/>
+ <group id="2" name="group_layer" opacity="0.5" offsetx="10" offsety="20">
+  <properties>
+   <property name="custom_group_property" value="test group string"/>
+  </properties>
+  <layer id="10" name="layer.with.dots" width="8" height="8">
+   <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+  <layer id="5" name="child_tile_layer" width="8" height="8" opacity="0.6" offsetx="30" offsety="40">
+   <properties>
+    <property name="custom_child_property" value="test child string"/>
+   </properties>
+   <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+  <objectgroup id="7" name="child_object_layer" visible="0"/>
+  <imagelayer id="6" name="child_image_layer"/>
+  <group id="8" name="child_group_layer">
+   <layer id="9" name="sub_layer" width="8" height="8">
+    <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+   </layer>
+  </group>
+ </group>
+</map>

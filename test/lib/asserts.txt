@@ -1,0 +1,87 @@
+----------------------------------------------------------------
+--
+--                     assertions
+--
+----------------------------------------------------------------
+
+M.assertError(f, ...)
+M.fail( msg )
+M.failIf( cond, msg )
+M.skip(msg)
+M.skipIf( cond, msg )
+M.runOnlyIf( cond, msg )
+M.success()
+M.successIf( cond )
+
+------------------------------------------------------------------
+--                  Equality assertions
+------------------------------------------------------------------
+
+M.assertEquals(actual, expected, extra_msg_or_nil, doDeepAnalysis)
+M.almostEquals( actual, expected, margin )
+M.assertAlmostEquals( actual, expected, margin, extra_msg_or_nil )
+M.assertNotEquals(actual, expected, extra_msg_or_nil)
+M.assertNotAlmostEquals( actual, expected, margin, extra_msg_or_nil )
+M.assertItemsEquals(actual, expected, extra_msg_or_nil)
+
+------------------------------------------------------------------
+--                  String assertion
+------------------------------------------------------------------
+
+M.assertStrContains( str, sub, isPattern, extra_msg_or_nil )
+M.assertStrIContains( str, sub, extra_msg_or_nil )
+M.assertNotStrContains( str, sub, isPattern, extra_msg_or_nil )
+M.assertNotStrIContains( str, sub, extra_msg_or_nil )
+M.assertStrMatches( str, pattern, start, final, extra_msg_or_nil )
+M.assertErrorMsgEquals( expectedMsg, func, ... )
+M.assertErrorMsgContentEquals(expectedMsg, func, ...)
+M.assertErrorMsgContains( partialMsg, func, ... )
+M.assertErrorMsgMatches( expectedMsg, func, ... )
+
+------------------------------------------------------------------
+--              Type assertions
+------------------------------------------------------------------
+
+M.assertEvalToTrue(value, extra_msg_or_nil)
+M.assertEvalToFalse(value, extra_msg_or_nil)
+M.assertIsTrue(value, extra_msg_or_nil)
+M.assertNotIsTrue(value, extra_msg_or_nil)
+M.assertIsFalse(value, extra_msg_or_nil)
+M.assertNotIsFalse(value, extra_msg_or_nil)
+M.assertIsNil(value, extra_msg_or_nil)
+M.assertNotIsNil
+
+M.assertIsNumber
+M.assertIsString
+M.assertIsTable
+M.assertIsBoolean
+M.assertIsFunction
+M.assertIsUserdata
+M.assertIsThread
+
+M.assertNotIsNumber
+M.assertNotIsString
+M.assertNotIsTable
+M.assertNotIsBoolean
+M.assertNotIsFunction
+M.assertNotIsUserdata
+M.assertNotIsThread
+
+------------------------------------------------------------------
+--              Scientific assertions
+------------------------------------------------------------------
+
+M.assertIsNaN(value, extra_msg_or_nil)
+M.assertNotIsNaN(value, extra_msg_or_nil)
+M.assertIsInf(value, extra_msg_or_nil)
+M.assertIsPlusInf(value, extra_msg_or_nil)
+M.assertIsMinusInf(value, extra_msg_or_nil)
+M.assertNotIsPlusInf(value, extra_msg_or_nil)
+M.assertNotIsMinusInf(value, extra_msg_or_nil)
+M.assertNotIsInf(value, extra_msg_or_nil)
+M.assertIsPlusZero(value, extra_msg_or_nil)
+M.assertIsMinusZero(value, extra_msg_or_nil)
+M.assertNotIsPlusZero(value, extra_msg_or_nil)
+M.assertNotIsMinusZero(value, extra_msg_or_nil)
+M.assertTableContains(t, expected)
+M.assertNotTableContains(t, expected)

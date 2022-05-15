@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="8" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="7">
+ <editorsettings>
+  <export target="layer_8x8_ortho_ts1_anim.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" name="world_tileset" tilewidth="16" tileheight="16" tilecount="64" columns="8">
+  <image source="../../../world_tileset.png" width="128" height="128"/>
+  <tile id="0">
+   <objectgroup draworder="index" id="3">
+    <object id="2" name="tile_object" x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="1">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="0" width="16" height="16">
+     <ellipse/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="33">
+   <animation>
+    <frame tileid="33" duration="300"/>
+    <frame tileid="57" duration="300"/>
+    <frame tileid="63" duration="300"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="tile_layer1" width="8" height="8" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,34,0,34,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="6" name="tile_layer2" width="8" height="8" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,34,0,34,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="object_layer1">
+  <object id="1" x="32" y="32" width="16" height="16"/>
+  <object id="2" name="rectangle_object" x="64" y="32" width="16" height="16"/>
+  <object id="3" x="96" y="32" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup id="7" name="object_layer2">
+  <object id="4" x="16" y="64">
+   <polygon points="0,0 0,16 16,16 0,0"/>
+  </object>
+  <object id="5" x="48" y="64">
+   <polygon points="0,0 0,16 16,16 0,0"/>
+  </object>
+  <object id="6" x="80" y="64">
+   <polygon points="0,0 0,16 16,16"/>
+  </object>
+ </objectgroup>
+ <imagelayer id="4" name="image_layer"/>
+ <group id="5" name="group_layer"/>
+</map>

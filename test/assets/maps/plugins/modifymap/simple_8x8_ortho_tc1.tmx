@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="8" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="1">
+ <editorsettings>
+  <export target="simple_8x8_ortho_tc1.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" name="tileset_collection" tilewidth="16" tileheight="16" tilecount="2" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="16" height="16" source="../../../back.png"/>
+  </tile>
+  <tile id="2">
+   <image width="15" height="15" source="../../../bpanel.png"/>
+  </tile>
+ </tileset>
+ <layer id="1" name="tile_layer" width="8" height="8" visible="0">
+  <data encoding="csv">
+1,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <group id="2" name="group_layer" visible="0" opacity="0.5">
+  <layer id="3" name="child_tile_layer" width="8" height="8">
+   <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+  <layer id="5" name="child_tile_layer2" width="8" height="8" visible="0">
+   <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+  <group id="6" name="child_group_layer" opacity="0.4">
+   <layer id="12" name="child_child_tile_layer" width="8" height="8" opacity="0.2">
+    <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+   </layer>
+   <objectgroup id="11" name="child_child_object_layer" opacity="0.2"/>
+   <imagelayer id="9" name="child_child_image_layer" opacity="0.2"/>
+   <group id="7" name="child_child_group_layer" opacity="0.2"/>
+  </group>
+ </group>
+ <layer id="4" name="tile_layer2" width="8" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <imagelayer id="8" name="image_layer" visible="0"/>
+ <objectgroup id="10" name="object_layer" visible="0"/>
+</map>
